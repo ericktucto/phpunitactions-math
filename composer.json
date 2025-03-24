@@ -1,0 +1,22 @@
+{
+    "name": "erick/phpunit-actions",
+    "type": "project",
+    "require-dev": {
+        "symfony/test-pack": "^1.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Math\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Erick Tucto",
+            "email": "erick@ericktucto.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
