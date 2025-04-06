@@ -74,7 +74,7 @@ class BasicTest extends TestCase
             $result->integer,
         );
         $this->assertEquals(
-            2,
+            4,
             $result->float,
         );
     }

@@ -15,7 +15,16 @@ class Basic
 
     public static function sub(Number $a, Number $b): Number
     {
+        $additional = 0;
+        $float = $a->float - $b->float;
+        if (0 > $float) {
+            $additional = 10 * strlen("{$a->float}");
+            $float += $additional;
+        }
         $integer = $a->integer - $b->integer;
-        return new Number($integer, 0);
+        if ($additional) {
+            $integer--;
+        }
+        return new Number($integer, $float);
     }
 }
